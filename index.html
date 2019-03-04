@@ -21,8 +21,8 @@
     <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
     <script defer src="assets/scripts/custom.js"></script>
     <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
-    <link id="theme-style" rel="stylesheet" title="default" href="assets/css/default.css">
-    <link id="theme-style" rel="dark stylesheet" title="dark" href="assets/css/dark.css">
+    <link id="default-theme" rel="stylesheet" href="assets/css/default.css">
+    <link id="dark-theme" rel="stylesheet" href="assets/css/dark.css">
 </head>
 
 
@@ -344,14 +344,16 @@
 
     <footer class="footer">
         <div class="footer-grid">
-            <div class="footer-grid-element"></div>
-            
-            <div class="text-center footer-grid-element">
+            <div id="footer-homepage" class="footer-grid-element">
+                <small><a href="/">Home Page</a></small>
+            </div>
+
+            <div id="footer-credits" class="footer-grid-element">
                 <small>Made with <i class="fas fa-heart"></i> by Filippo Pesavento</small>
             </div>
-            
-            <div class="switch-theme footer-grid-element">
-                    <small><a href="" onclick="switchTheme();return false;">Switch Theme</a></small>
+
+            <div id="footer-switchtheme" class="footer-grid-element">
+                <small><a href="" onclick="switchTheme();return false;">Switch Theme</a></small>
             </div>
         </div>
     </footer>
