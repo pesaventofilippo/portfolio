@@ -14,6 +14,7 @@ window.onload = function() {
     var currentTheme = localStorage.currentTheme;
     if(!currentTheme) {
         localStorage.currentTheme = "default";
+        currentTheme = "default";
     }
     var link_tag = document.getElementsByTagName("link");
         for (var i=0; i<link_tag.length; i++) {
