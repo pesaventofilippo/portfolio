@@ -458,6 +458,15 @@ a.dotted-link:hover {
   color: #fb866a;
 }
 
+.footer-grid {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+}
+
+.footer-grid-element {
+    text-align: center;
+}
+
 @media (max-width: 767.98px) {
   .header {
     text-align: center;
