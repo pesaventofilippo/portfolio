@@ -20,7 +20,7 @@ function switchTheme() {
         }
         location.reload();
     }
-};
+}
 
 
 window.onload = function() {
@@ -30,11 +30,11 @@ window.onload = function() {
             localStorage.currentTheme = "default";
             currentTheme = "default";
         }
-        if(currentTheme == "default") {
+        if(currentTheme === "default") {
             document.getElementById("default-theme").disabled = false;
             document.getElementById("dark-theme").disabled = true;
         }
-        else if(currentTheme == "dark") {
+        else if(currentTheme === "dark") {
             document.getElementById("dark-theme").disabled = false;
             document.getElementById("default-theme").disabled = true;
         }
@@ -44,4 +44,4 @@ window.onload = function() {
         document.getElementById("dark-theme").disabled = true;
         document.getElementById("footer-switchtheme").innerHTML = "";
     }
-}
+};
