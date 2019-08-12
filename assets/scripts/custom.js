@@ -12,10 +12,10 @@ function isLsSupported() {
 function switchTheme() {
     if(isLsSupported()) {
         var currentTheme = localStorage.currentTheme;
-        if(currentTheme == "default") {
+        if(currentTheme === "default") {
             localStorage.currentTheme = "dark";
         }
-        else if(currentTheme == "dark") {
+        else if(currentTheme === "dark") {
             localStorage.currentTheme = "default";
         }
         location.reload();
@@ -49,4 +49,4 @@ window.onload = function() {
     let xmlHttp = new XMLHttpRequest();
     xmlHttp.open('GET', 'https://hitcounter.pythonanywhere.com/count?url=pesaventofilippo.tk', true);
     xmlHttp.send(null);
-};
+}
