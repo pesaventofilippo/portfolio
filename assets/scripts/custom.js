@@ -44,9 +44,4 @@ window.onload = function() {
         document.getElementById("dark-theme").disabled = true;
         document.getElementById("footer-switchtheme").innerHTML = "";
     }
-
-    // Hit View Counter
-    let xmlHttp = new XMLHttpRequest();
-    xmlHttp.open('GET', 'https://hitcounter.pythonanywhere.com/count?url=pesaventofilippo.com', true);
-    xmlHttp.send(null);
 }
