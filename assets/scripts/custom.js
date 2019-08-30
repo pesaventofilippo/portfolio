@@ -45,8 +45,8 @@ window.onload = function() {
         document.getElementById("footer-switchtheme").innerHTML = "";
     }
 
-    // View Counter
+    // Hit View Counter
     let xmlHttp = new XMLHttpRequest();
-    xmlHttp.open('GET', 'https://hitcounter.pythonanywhere.com/count?url=pesaventofilippo.tk', true);
+    xmlHttp.open('GET', 'https://hitcounter.pythonanywhere.com/count?url=pesaventofilippo.com', true);
     xmlHttp.send(null);
 }
