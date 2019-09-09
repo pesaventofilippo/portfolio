@@ -24,6 +24,7 @@ function switchTheme() {
 
 
 window.onload = function() {
+    // Theme Modifier
     if(isLsSupported()) {
         var currentTheme = localStorage.currentTheme;
         if(!currentTheme) {
@@ -43,5 +44,14 @@ window.onload = function() {
         document.getElementById("default-theme").disabled = false;
         document.getElementById("dark-theme").disabled = true;
         document.getElementById("footer-switchtheme").innerHTML = "";
+    }
+
+    // HitCounter Updater
+    var hitcounter = document.getElementById("hitcounter");
+    if(hitcounter) {
+        var req = new XMLHttpRequest();
+        req.open("GET", "https://hitcounter.pythonanywhere.com/count?url=pesaventofilippo.com", false);
+        req.send(null);
+        hitcounter.innerText = req.responseText;
     }
 }
