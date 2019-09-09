@@ -50,8 +50,14 @@ window.onload = function() {
     var hitcounter = document.getElementById("hitcounter");
     if(hitcounter) {
         var req = new XMLHttpRequest();
-        req.open("GET", "https://hitcounter.pythonanywhere.com/count?url=pesaventofilippo.com", false);
+        req.open("GET", "https://hitcounter.pythonanywhere.com/count?url=pesaventofilippo.com", true);
+        req.onload = function (e) {
+            if (req.readyState === 4) {
+                if (req.status === 200) {
+                    hitcounter.innerText = req.responseText;
+                }
+            }
+        }
         req.send(null);
-        hitcounter.innerText = req.responseText;
     }
 }
