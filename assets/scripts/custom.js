@@ -48,7 +48,7 @@ window.onload = function() {
 
     // HitCounter Updater
     var hitcounter = document.getElementById("hitcounter");
-    if(hitcounter) {
+    if (hitcounter) {
         var req = new XMLHttpRequest();
         req.open("GET", "https://hitcounter.pythonanywhere.com/count?url=pesaventofilippo.com", true);
         req.onload = function (e) {
