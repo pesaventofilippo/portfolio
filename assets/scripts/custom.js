@@ -28,8 +28,8 @@ window.onload = function() {
     if(isLsSupported()) {
         var currentTheme = localStorage.currentTheme;
         if(!currentTheme) {
-            localStorage.currentTheme = "default";
-            currentTheme = "default";
+            localStorage.currentTheme = "dark";
+            currentTheme = "dark";
         }
         if(currentTheme === "default") {
             document.getElementById("default-theme").disabled = false;
