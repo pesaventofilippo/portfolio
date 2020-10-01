@@ -72,7 +72,7 @@ window.onload = function() {
         }
         req.send(null);
     }
-	var age = document.getElementById("age");
+    var age = document.getElementById("age");
     if (age) {
         age.innerHTML = getAge();
     }
