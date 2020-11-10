@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>colorPicker</title>
+        <meta name="description" content="A random Color Picker">
+        <meta name="author" content="Filippo Pesavento">
+        <meta property="og:title" content="colorPicker" />
+        <meta property="og:description" content=" A random Color Picker" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <p id="colorid" style="position: fixed; bottom: 0; width:100%; text-align: center"></p>
+
+        <style>
+            #colorid {
+                font-family: 'Roboto Mono', monospace;
+            }
+        </style>
+
+        <script type="text/javascript">
+            var selColor = Math.floor(Math.random() * 16777215).toString(16);
+            selColor = "#" + ("000000" + selColor).slice(-6);
+            document.bgColor = selColor;
+            document.getElementById("colorid").innerText = selColor.toUpperCase();
+        </script>
+    </body>
+</html>

@@ -23,6 +23,18 @@ function switchTheme() {
 }
 
 
+function getAge() {
+    var today = new Date();
+    var birthDate = new Date("September 17, 2004");
+    var age = today.getFullYear() - birthDate.getFullYear();
+    var m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+    return age;
+}
+
+
 window.onload = function() {
     // Theme Modifier
     if(isLsSupported()) {
@@ -59,5 +71,11 @@ window.onload = function() {
             }
         }
         req.send(null);
+    }
+
+    // Calculate age
+    var age = document.getElementById("age");
+    if (age) {
+        age.innerHTML = getAge();
     }
 }
