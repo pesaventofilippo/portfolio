@@ -10,19 +10,39 @@
     </head>
 
     <body>
-        <p id="colorid" style="position: fixed; bottom: 0; width:100%; text-align: center"></p>
+        <p id="colorid" style="position: fixed; bottom: 0; width:100%; text-align: center" onclick="copyToClipboard()"></p>
 
         <style>
             #colorid {
                 font-family: 'Roboto Mono', monospace;
+                cursor: pointer;
             }
         </style>
 
         <script type="text/javascript">
+            var colorText = document.getElementById("colorid");
+
+            function setText(string) {
+                colorText.innerText = string;
+            }
+
+            function copyToClipboard() {
+                const txtar = document.createElement('textarea');
+                txtar.value = colorText.innerText;
+                document.body.appendChild(txtar);
+                txtar.select();
+                document.execCommand('copy');
+                document.body.removeChild(txtar);
+
+                var prev = colorText.innerText;
+                setText("Copied!");
+                setTimeout(setText, 2000, prev);
+            }
+
             var selColor = Math.floor(Math.random() * 16777215).toString(16);
             selColor = "#" + ("000000" + selColor).slice(-6);
             document.bgColor = selColor;
-            document.getElementById("colorid").innerText = selColor.toUpperCase();
+            setText(selColor.toUpperCase());
         </script>
     </body>
 </html>
