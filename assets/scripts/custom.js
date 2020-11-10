@@ -25,7 +25,11 @@ function switchTheme() {
 
 function getAge() {
     var today = new Date();
+<<<<<<< HEAD
     var birthDate = new Date("September 17, 2004");
+=======
+    var birthDate = new Date("June 23, 2003");
+>>>>>>> 2b353ae3d8235b4eba29d4ca9071498476319271
     var age = today.getFullYear() - birthDate.getFullYear();
     var m = today.getMonth() - birthDate.getMonth();
     if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
@@ -72,8 +76,11 @@ window.onload = function() {
         }
         req.send(null);
     }
+<<<<<<< HEAD
 
     // Calculate age
+=======
+>>>>>>> 2b353ae3d8235b4eba29d4ca9071498476319271
     var age = document.getElementById("age");
     if (age) {
         age.innerHTML = getAge();
