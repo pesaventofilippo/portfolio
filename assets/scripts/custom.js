@@ -59,19 +59,19 @@ window.onload = function() {
     }
 
     // HitCounter Updater
-    var hitcounter = document.getElementById("hitcounter");
-    if (hitcounter) {
-        var req = new XMLHttpRequest();
-        req.open("GET", "https://hitcounter.pythonanywhere.com/count?url=pesaventofilippo.com", true);
-        req.onload = function (e) {
-            if (req.readyState === 4) {
-                if (req.status === 200) {
+    var req = new XMLHttpRequest();
+    req.open("GET", "https://hitcounter.pythonanywhere.com/count?url=pesaventofilippo.com", true);
+    req.onload = function (e) {
+        if (req.readyState === 4) {
+            if (req.status === 200) {
+                var hitcounter = document.getElementById("hitcounter");
+                if (hitcounter) {
                     hitcounter.innerText = req.responseText;
                 }
             }
         }
-        req.send(null);
     }
+    req.send(null);
 
     // Calculate age
     var age = document.getElementById("age");
