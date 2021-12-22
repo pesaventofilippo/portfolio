@@ -14,35 +14,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Filippo Pesavento">
     <meta name="author" content="Filippo Pesavento">
-    <link rel="shortcut icon" href="assets/images/profile.png">
+    <link rel="shortcut icon" href="/assets/images/profile.png">
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
-    <script defer src="assets/scripts/custom.js"></script>
-    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
-    <link id="default-theme" rel="stylesheet" href="assets/css/default.css">
-    <link id="dark-theme" rel="stylesheet" href="assets/css/dark.css">
+    <script defer src="/assets/scripts/custom.js"></script>
+    <link rel="stylesheet" href="/assets/bootstrap/bootstrap.min.css">
+    <link id="theme" rel="stylesheet" href="/assets/css/default.css">
 </head>
 
 
 <body>
-
     <header class="header">
         <div class="container clearfix">
-            <img class="profile-image img-fluid float-left" src="assets/images/profile.png" width="180" height="180" alt="Filippo Pesavento">
+            <img class="profile-image img-fluid float-left" src="/assets/images/profile.png" width="180" height="180" alt="Filippo Pesavento">
             <div class="profile-content float-left">
                 <h1 class="name">Filippo Pesavento</h1>
-                <h2 class="desc">Developer, Maker and student</h2>
-                <ul class="social list-inline">
-                    <li class="list-inline-item"><a href="https://github.com/pesaventofilippo" target="_blank"><i class="fab fa-github-alt"></i></a></li>
-                    <li class="list-inline-item"><a href="https://t.me/pesaventofilippo" target="_blank"><i class="fab fa-telegram"></i></a></li>
-                    <li class="list-inline-item"><a href="https://twitter.com/pesaventofil" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                    <li class="list-inline-item"><a href="https://linkedin.com/in/pesaventofilippo" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                    <li class="list-inline-item"><a href="https://www.sololearn.com/Profile/5328477" target="_blank"><i class="fa fa-graduation-cap"></i></a></li>
-                    <li class="list-inline-item"><a href="https://instagram.com/pesaventofilippo" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                </ul>
+                <h2 class="desc" id="bio"></h2>
+                <ul class="social list-inline" id="social-list"></ul>
             </div>
-            <a class="btn btn-cta-primary float-right" href="https://www.paypal.com/paypalme/pesaventofilippo" target="_blank"><i class="fas fa-coffee"></i> Like my projects?</a>
+            <a id="contact-button" class="btn btn-cta-primary float-right" href="" target="_blank"></a>
         </div>
     </header>
 
@@ -53,155 +44,17 @@
                     <div class="section-inner">
                         <h2 class="heading">About Me</h2>
                         <div class="content">
-                            <p>I'm a <span id="age">18</span> year-old student. In my free time, I become a developer, producer or maker. I do pretty well at school, but I also like developing and making music.<br>
-                                My main interests are programming, cybersecurity, machine learning, networking, robotics and problem solving (I regularly participate in the Italian computer science and maths olympics - see the Achievements tab below).<br>
-                                I'm currently attending last year of high school in ITT Chilesotti, Italy.</p>
+                            <p id="aboutme"></p>
                         </div>
                     </div>
                 </section>
 
                 <section class="latest section">
                     <div class="section-inner">
-                        <h2 class="heading">Active and/or Open-Source Projects</h2>
-                        <div class="content">
-
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="https://t.me/checolorebot">
-                                <img class="img-fluid project-image" src="assets/images/projects/checolorebot.png" width="600" height="450" alt="CheColoreBot">
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://t.me/checolorebot">CheColoreBot</a></h3>
-                                    <p class="mb-2">This bot helps you to know every morning what "color" your region is (in Italy, we have colors to define how much a region is under lockdown).</p>
-                                    <p><a class="more-link" href="https://t.me/checolorebot"><i class="fas fa-external-link-alt"></i>Telegram Bot</a><br>
-                                        <a class="more-link" href="https://github.com/pesaventofilippo/checolorebot"><i class="fas fa-external-link-alt"></i>GitHub Repo</a></p>
-                                </div>
-                            </div>
-
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="https://t.me/classevivait_bot">
-                                <img class="img-fluid project-image" src="assets/images/projects/classevivabot.png" width="600" height="450" alt="ClasseViva Bot">
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://t.me/classevivait_bot">ClasseViva Bot</a></h3>
-                                    <p class="mb-2">This is a Telegram Bot for Spaggiari's ClasseViva school E-Register. It replaces the official app, as it implements hourly notifications about everything in the website, and daily reminders about what to do for the next day and what has been done in the morning. Check it out on <a href="https://t.me/classevivait_bot">Telegram</a>!</p>
-                                    <p><a class="more-link" href="https://t.me/classevivait_bot"><i class="fas fa-external-link-alt"></i>Telegram Bot</a><br>
-                                        <a class="more-link" href="projects/classevivabot"><i class="fas fa-external-link-alt"></i>Project Page</a></p>
-                                </div>
-                            </div>
-
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="https://t.me/iliadinfobot">
-                                <img class="img-fluid project-image" src="assets/images/projects/iliadinfobot.png" width="600" height="450" alt="IliadInfoBot">
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://t.me/iliadinfobot">IliadInfoBot</a></h3>
-                                    <p class="mb-2">A Telegram Bot to get all profile, SIM and contract related infos for the Italian carrier Iliad.</p>
-                                    <p><a class="more-link" href="https://t.me/iliadinfobot"><i class="fas fa-external-link-alt"></i>Telegram Bot</a><br>
-                                        <a class="more-link" href="https://github.com/pesaventofilippo/iliadinfobot"><i class="fas fa-external-link-alt"></i>GitHub Repo</a></p>
-                                </div>
-                            </div>
-
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="https://frictionless.pesaventofilippo.com">
-                                <img class="img-fluid project-image" src="assets/images/projects/frictionless.png" width="600" height="450" alt="Frictionless">
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://frictionless.pesaventofilippo.com">Frictionless</a></h3>
-                                    <p class="mb-2">Frictionless is a casual Android game that I'm currently developing with Giulian Biolo. You can click below to follow the development channel and try out the game!</p>
-                                    <p><a class="more-link" href="https://t.me/frictionlessdev"><i class="fas fa-external-link-alt"></i>Follow Development</a><br>
-                                        <a class="more-link" href="https://frictionless.pesaventofilippo.com"><i class="fas fa-external-link-alt"></i>Game Website</a></p>
-                                </div>
-                            </div>
-
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="https://t.me/oisrankingbot">
-                                <img class="img-fluid project-image" src="assets/images/projects/oisrankingbot.png" width="600" height="450" alt="OIS Ranking Bot">
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://t.me/oisrankingbot">OIS Ranking Bot</a></h3>
-                                    <p class="mb-2">A Telegram (and Discord too) bot to keep you updated on the leaderboard when a round of the Italian team problem-solving olympics is active.</p>
-                                    <p><a class="more-link" href="https://t.me/oisrankingbot"><i class="fas fa-external-link-alt"></i>Use it on Telegram!</a><br>
-                                        <a class="more-link" href="https://discord.com/api/oauth2/authorize?client_id=782594209945092106&permissions=18496&scope=bot"><i class="fas fa-external-link-alt"></i>Add it to your Discord server!</a><br>
-                                        <a class="more-link" href="https://github.com/pesaventofilippo/oisrankingbot"><i class="fas fa-external-link-alt"></i>GitHub Repo</a></p>
-                                </div>
-                            </div>
-
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="https://t.me/clipsharebot">
-                                <img class="img-fluid project-image" src="assets/images/projects/clipsharebot.png" width="600" height="450" alt="ClipShare Bot">
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://t.me/clipsharebot">ClipShare Bot</a></h3>
-                                    <p class="mb-2">A Telegram Bot to quickly paste and share text snippets. A sort of a glorified Ctrl+C and Ctrl+V, but on the cloud and with encryption.</p>
-                                    <p><a class="more-link" href="https://t.me/clipsharebot"><i class="fas fa-external-link-alt"></i>Telegram Bot</a><br>
-                                        <a class="more-link" href="https://github.com/pesaventofilippo/clipsharebot"><i class="fas fa-external-link-alt"></i>GitHub Repo</a></p>
-                                </div>
-                            </div>
-
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="https://github.com/pesaventofilippo/telepotpro">
-                                <img class="img-fluid project-image" src="assets/images/projects/telepotpro.png" width="600" height="450" alt="TelepotPro">
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://github.com/pesaventofilippo/telepotpro">TelepotPro</a></h3>
-                                    <p class="mb-2">An improved version of the Telepot Python framework by nickoala, updated to the newer APIs, with support for newer features and some bugfixes.</p>
-                                    <p><a class="more-link" href="https://github.com/pesaventofilippo/telepotpro"><i class="fas fa-external-link-alt"></i>GitHub Repo</a></p>
-                                </div>
-                            </div>
-
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="https://t.me/freebooksbbot">
-                                <img class="img-fluid project-image" src="assets/images/projects/freebooksbbot.png" width="600" height="450" alt="Free Books Bot">
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://t.me/freebooksbbot">Free Books Bot</a></h3>
-                                    <p class="mb-2">This bot lets you find new ebooks to read by category and title. I'm constantly adding new ebooks, so it always has new content. Check it out on <a href="https://t.me/freebooksbbot">Telegram</a>!</p>
-                                    <p><a class="more-link" href="https://t.me/freebooksbbot"><i class="fas fa-external-link-alt"></i>Telegram Bot</a><br>
-                                        <a class="more-link" href="https://github.com/pesaventofilippo/freebooksbbot"><i class="fas fa-external-link-alt"></i>GitHub Repo</a></p>
-                                </div>
-                            </div>
-
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="https://github.com/pesaventofilippo/makersai">
-                                <img class="img-fluid project-image" src="assets/images/projects/makersai.png" width="600" height="450" alt="Makers AI">
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://github.com/pesaventofilippo/makersai">Makers AI</a></h3>
-                                    <p class="mb-2">A text-generating AI, based exclusively on messages sent in the MakersITA Telegram group, founded by overVolt. There will soon be a bot that sends generated messages in the group!</p>
-                                    <p><a class="more-link" href="https://t.me/makersita"><i class="fas fa-external-link-alt"></i>Telegram Group</a><br>
-                                        <a class="more-link" href="https://github.com/pesaventofilippo/makersai"><i class="fas fa-external-link-alt"></i>GitHub Repo</a></p>
-                                </div>
-                            </div>
-
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="https://t.me/offervolt">
-                                <img class="img-fluid project-image" src="assets/images/projects/scontino.png" width="600" height="450" alt="Scontino Bot">
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://t.me/offervolt">Scontino Bot</a></h3>
-                                    <p class="mb-2">This Telegram bot is made for the <a href="https://t.me/offervolt" target="_blank">offerVolt channel</a> on Telegram. It can automatically format messages, add infos, retrieve a product information from the shop webpage, program posts in the future and much more. The sourcecode, starting from 1st January 2018, has become closed, but you can still see it in action <a href="https://t.me/offervolt" target="_blank">here</a>.</p>
-                                </div>
-                            </div>
-
-                            <div class="item row">
-                                <a class="col-md-4 col-12" href="https://t.me/offervoltbot">
-                                <img class="img-fluid project-image" src="assets/images/projects/offervoltbot.png" width="600" height="450" alt="OfferVolt Bot">
-                                </a>
-                                <div class="desc col-md-8 col-12">
-                                    <h3 class="title"><a href="https://t.me/offervoltbot">OfferVolt Bot</a></h3>
-                                    <p class="mb-2">The official offerVolt channel's Telegram bot. Users of that channel can use it to talk with the staff, asking questions or suggesting products to post on the main channel.</p>
-                                    <p><a class="more-link" href="https://t.me/offervoltbot"><i class="fas fa-external-link-alt"></i>Telegram Bot</a><br>
-                                        <a class="more-link" href="https://github.com/pesaventofilippo/offervoltbot"><i class="fas fa-external-link-alt"></i>GitHub Repo</a></p>
-                                </div>
-                            </div>
-
-                            I'm also working on lots of other projects that are either not open-source, archived or not available because I'm not actively developing them.<br>
-                            See <a href="projects/">other projects</a> if you want to see them.
-
-                        </div>
+                        <h2 class="heading" id="projects-title"></h2>
+                        <div class="content" id="projects-div"></div>
                     </div>
                 </section>
-
             </div>
 
 
@@ -210,13 +63,7 @@
                     <div class="section-inner">
                         <h2 class="heading sr-only">Basic Information</h2>
                         <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Vicenza, IT</li>
-                                <li><i class="fas fa-envelope"></i><span class="sr-only">Personal Email:</span>hello[at]pesaventofilippo.com</li>
-                                <li><i class="fas fa-envelope"></i><span class="sr-only">Personal Email:</span>pesaventofilippo[at]gmail.com</li>
-                                <li><i class="fas fa-envelope"></i><span class="sr-only">School Email:</span>fpesavento[at]chilesotti.it</li>
-                                <!-- <li><i class="fas fa-eye"></i>Views: <a id="hitcounter">N/A</a></li> -->
-                            </ul>
+                            <ul class="list-unstyled" id="contact-list"></ul>
                         </div>
                     </div>
                 </aside>
@@ -226,67 +73,7 @@
                     <div class="section-inner">
                         <h2 class="heading">IT Skills</h2>
                         <div class="content">
-                            <ul class="list-unstyled">
-
-                                <li class="item">
-                                    <span class="title"><strong>Git:</strong></span>
-                                    <span class="level">High <br class="visible-sm visible-xs"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
-                                </li>
-
-                                <li class="item">
-                                    <span class="title"><strong>Bash / Linux Terminal:</strong></span>
-                                    <span class="level">High <br class="visible-sm visible-xs"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half"></i> </span>
-                                </li>
-
-                                <li class="item">
-                                    <span class="title"><strong>Networking:</strong></span>
-                                    <span class="level">High <br class="visible-sm visible-xs"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
-                                </li>
-
-                                <li class="item">
-                                <span class="title"><strong>Machine Learning:</strong></span>
-                                <span class="level">Medium <br class="visible-sm visible-xs"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half"></i> </span>
-                                </li>
-
-                                <li class="item">
-                                    <span class="title"><strong>Docker:</strong></span>
-                                    <span class="level">Low <br class="visible-sm visible-xs"><i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
-                                </li>
-
-                                <br>
-
-                                <li class="item">
-                                    <span class="title"><strong>Python:</strong></span>
-                                    <span class="level">Expert <br class="visible-sm visible-xs"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half"></i> </span>
-                                </li>
-
-                                <li class="item">
-                                    <span class="title"><strong>C#:</strong></span>
-                                    <span class="level">High <br class="visible-sm visible-xs"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
-                                </li>
-
-                                <li class="item">
-                                    <span class="title"><strong>C++:</strong></span>
-                                    <span class="level">Medium <br class="visible-sm visible-xs"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
-                                </li>
-
-                                <li class="item">
-                                    <span class="title"><strong>JavaScript:</strong></span>
-                                    <span class="level">Medium <br class="visible-sm visible-xs"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half"></i> </span>
-                                </li>
-
-                                <li class="item">
-                                    <span class="title"><strong>HTML/CSS:</strong></span>
-                                    <span class="level">Medium <br class="visible-sm visible-xs"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half"></i> </span>
-                                </li>
-
-                                <li class="item">
-                                    <span class="title"><strong>Java:</strong></span>
-                                    <span class="level">Low <br class="visible-sm visible-xs"><i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
-                                </li>
-
-                                <li>I also know other languages, but I'm not too confident with them and I don't use them very much, so they're not in this list.</li>
-                            </ul>
+                            <ul class="list-unstyled" id="skills-list"></ul>
                         </div>
                     </div>
                 </aside>
@@ -295,16 +82,7 @@
                     <div class="section-inner">
                         <h2 class="heading">Languages</h2>
                         <div class="content">
-                            <ul class="list-unstyled">
-                                <li class="item">
-                                    <span class="title"><strong>Italian:</strong></span>
-                                    <span class="level">Native Speaker <br class="visible-sm visible-xs"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
-                                </li>
-                                <li class="item">
-                                    <span class="title"><strong>English:</strong></span>
-                                    <span class="level">Medium-High (B2) <br class="visible-sm visible-xs"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half"></i> </span>
-                                </li>
-                            </ul>
+                            <ul class="list-unstyled" id="languages-list"></ul>
                         </div>
                     </div>
                 </aside>
@@ -312,60 +90,21 @@
                 <aside class="education aside section">
                     <div class="section-inner">
                         <h2 class="heading">Education</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Mid School Diploma (10+/10)</h3>
-                                <h4 class="university">G. Ciscato Mid School <span class="year">(2014-2017)</span></h4>
-                            </div>
-
-                            <div class="item">
-                                <h3 class="title"><i class="fas fa-graduation-cap" aria-hidden="true"></i> CS Student</h3>
-                                <h4 class="university">ITT Chilesotti <span class="year">(2017-Present)</span></h4>
-                            </div>
-                        </div>
+                        <div class="content" id="education-list"></div>
                     </div>
                 </aside>
 
                 <aside class="education aside section">
                     <div class="section-inner">
                         <h2 class="heading">Achievements</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title"><i class="fas fa-comments" aria-hidden="true"></i> ViChallenge Hackathon</h3>
-                                <h4 class="university"><a href="https://digitalinnovationhubvicenza.it/vi-challenge-hackathon-27-e-28-novembre-2021/">Best project - 1st Prize (team)</a> <span class="year">(2021)</span></h4>
-                            </div>
-
-                            <div class="item">
-                                <h3 class="title"><i class="fas fa-code" aria-hidden="true"></i> OII Finals</h3>
-                                <h4 class="university">National Coding finals - 86th in Italy <span class="year">(2021)</span></h4>
-                            </div>
-
-                            <div class="item">
-                                <h3 class="title"><i class="fas fa-code" aria-hidden="true"></i> OIS Finals</h3>
-                                <h4 class="university">National Coding finals (teams) - 4th in Italy <span class="year">(2021)</span></h4>
-                            </div>
-                            
-                            <div class="item">
-                                <h3 class="title"><i class="fas fa-calculator" aria-hidden="true"></i> Bocconi Finals</h3>
-                                <h4 class="university">National Maths finals (L1) - 94th in Italy <span class="year">(2021)</span></h4>
-                            </div>
-
-                            <div class="item">
-                                <h3 class="title"><i class="fas fa-calculator" aria-hidden="true"></i> Bocconi Finals</h3>
-                                <h4 class="university">National Maths finals (C1) - 283rd in Italy <span class="year">(2016)</span></h4>
-                            </div>
-                        </div>
+                        <div class="content" id="achievements-list"></div>
                     </div>
                 </aside>
 
-                <aside class="experience section">
+                <aside class="education aside section">
                     <div class="section-inner">
                         <h2 class="heading">Work Experiences</h2>
-                        <div class="content">
-                            <div class="item">
-                                <h3 class="title">IT Stage - <span class="place"><a href="https://www.advnet.it/" target="_blank">ADVNET Srl</a></span> <span class="year">(03/06/21 - 30/06/21)</span></h3>
-                            </div>
-                        </div>
+                        <div class="content" id="work-list"></div>
                     </div>
                 </aside>
 
@@ -379,15 +118,12 @@
                 <small><a href="/">Home Page</a></small>
             </div>
 
-            <div id="footer-credits" class="footer-grid-element">
-                <small>Made with <i class="fas fa-heart"></i> by Filippo Pesavento</small>
-            </div>
+            <div id="footer-credits" class="footer-grid-element"></div>
 
             <div id="footer-switchtheme" class="footer-grid-element">
                 <small><a href="" onclick="switchTheme();return false;">Switch Theme</a></small>
             </div>
         </div>
     </footer>
-
 </body>
 </html>
