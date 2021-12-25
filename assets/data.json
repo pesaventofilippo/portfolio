@@ -52,7 +52,7 @@
             "projects": [
                 {
                     "name": "CheColoreBot",
-                    "photo": "/assets/images/projects/checolorebot.png",
+                    "photo": "/assets/images/projects/checolorebot.webp",
                     "description": "This bot helps you to know every morning what \"color\" your region is (in Italy, we have colors to define how much a region is under lockdown).",
                     "links": [
                         {
@@ -67,7 +67,7 @@
                 },
                 {
                     "name": "ClasseViva Bot",
-                    "photo": "/assets/images/projects/classevivabot.png",
+                    "photo": "/assets/images/projects/classevivabot.webp",
                     "description": "This is a Telegram Bot for Spaggiari's ClasseViva school E-Register. It replaces the official app, as it implements hourly notifications about everything in the website, and daily reminders about what to do for the next day and what has been done in the morning.",
                     "links": [
                         {
@@ -82,7 +82,7 @@
                 },
                 {
                     "name": "IliadInfoBot",
-                    "photo": "/assets/images/projects/iliadinfobot.png",
+                    "photo": "/assets/images/projects/iliadinfobot.webp",
                     "description": "A Telegram Bot to get all profile, SIM and contract related infos for the Italian carrier Iliad.",
                     "links": [
                         {
@@ -97,7 +97,7 @@
                 },
                 {
                     "name": "Frictionless",
-                    "photo": "/assets/images/projects/frictionless.png",
+                    "photo": "/assets/images/projects/frictionless.webp",
                     "description": "Frictionless is a casual Android game that I'm currently developing with Giulian Biolo. You can click below to follow the development channel and try out the game!",
                     "links": [
                         {
@@ -112,7 +112,7 @@
                 },
                 {
                     "name": "OIS Ranking Bot",
-                    "photo": "/assets/images/projects/oisrankingbot.png",
+                    "photo": "/assets/images/projects/oisrankingbot.webp",
                     "description": "A Telegram (and Discord too) bot to keep you updated on the leaderboard when a round of the Italian team problem-solving olympics is active.",
                     "links": [
                         {
@@ -131,7 +131,7 @@
                 },
                 {
                     "name": "ClipShare Bot",
-                    "photo": "/assets/images/projects/clipsharebot.png",
+                    "photo": "/assets/images/projects/clipsharebot.webp",
                     "description": "A Telegram Bot to quickly paste and share text snippets. A sort of a glorified Ctrl+C and Ctrl+V, but on the cloud and with encryption.",
                     "links": [
                         {
@@ -146,7 +146,7 @@
                 },
                 {
                     "name": "TelepotPro",
-                    "photo": "/assets/images/projects/telepotpro.png",
+                    "photo": "/assets/images/projects/telepotpro.webp",
                     "description": "An improved version of the Telepot Python framework by nickoala, updated to the newer APIs, with support for newer features and some bugfixes.",
                     "links": [
                         {
@@ -157,7 +157,7 @@
                 },
                 {
                     "name": "Free Books Bot",
-                    "photo": "/assets/images/projects/freebooksbbot.png",
+                    "photo": "/assets/images/projects/freebooksbbot.webp",
                     "description": "This bot lets you find new ebooks to read by category and title. I'm constantly adding new ebooks, so it always has new content.",
                     "links": [
                         {
@@ -172,7 +172,7 @@
                 },
                 {
                     "name": "Makers AI",
-                    "photo": "/assets/images/projects/makersai.png",
+                    "photo": "/assets/images/projects/makersai.webp",
                     "description": "A text-generating AI, based exclusively on messages sent in the MakersITA Telegram group, founded by overVolt. There will soon be a bot that sends generated messages in the group!",
                     "links": [
                         {
@@ -187,7 +187,7 @@
                 },
                 {
                     "name": "Scontino Bot",
-                    "photo": "/assets/images/projects/scontino.png",
+                    "photo": "/assets/images/projects/scontino.webp",
                     "description": "This Telegram bot is made for the Telegram channel offerVolt. It can automatically format messages, add infos, retrieve a product information from the shop webpage, program posts in the future and much more. The sourcecode, starting from 1st January 2018, has become closed.",
                     "links": [
                         {
@@ -204,7 +204,7 @@
             "projects": [
                 {
                     "name": "TeamTrees Bot",
-                    "photo": "/assets/images/projects/teamtreesbot.png",
+                    "photo": "/assets/images/projects/teamtreesbot.webp",
                     "description": "A simple Telegram Bot to keep updated with the teamtrees.org project!",
                     "links": [
                         {
@@ -219,7 +219,7 @@
                 },
                 {
                     "name": "offerVolt Bot",
-                    "photo": "/assets/images/projects/offervoltbot.png",
+                    "photo": "/assets/images/projects/offervoltbot.webp",
                     "description": "The official offerVolt channel's Telegram bot. Users of that channel can use it to talk with the staff, asking questions or suggesting products to post on the main channel.",
                     "links": [
                         {
@@ -234,7 +234,7 @@
                 },
                 {
                     "name": "GroupHelper Bot",
-                    "photo": "/assets/images/projects/grouphelperbot.png",
+                    "photo": "/assets/images/projects/grouphelperbot.webp",
                     "description": "A Telegram bot that can help group admins to manage their groups. It has many commands, multilanguage support and a scale-type privilege for group admins, moderators and helpers.",
                     "links": [
                         {
@@ -245,7 +245,7 @@
                 },
                 {
                     "name": "Amazon Shortener Bot",
-                    "photo": "/assets/images/projects/amznshortbot.png",
+                    "photo": "/assets/images/projects/amznshortbot.webp",
                     "description": "An inline-Telegram Bot to send short Amazon URLs instead of long ones. It can just strip a link from all useless tags or fully short it using bit.ly APIs.",
                     "links": [
                         {
@@ -260,7 +260,7 @@
                 },
                 {
                     "name": "Monolix",
-                    "photo": "/assets/images/projects/monolix.png",
+                    "photo": "/assets/images/projects/monolix.webp",
                     "description": "Monolix is a startup Software House, founded by Gianluca Parri, Emanuele Lillo and me in 2018. It has many projects on its GitHub page, including the most famous one, Banklog.",
                     "links": [
                         {
@@ -271,7 +271,7 @@
                 },
                 {
                     "name": "Geometry Dash Bot",
-                    "photo": "/assets/images/projects/geometrydashbot.png",
+                    "photo": "/assets/images/projects/geometrydashbot.webp",
                     "description": "A Telegram Bot that lets you see many GD stats, levels, info and more, using GD Colon's Web APIs!",
                     "links": [
                         {
@@ -286,7 +286,7 @@
                 },
                 {
                     "name": "SpotiPyBot",
-                    "photo": "/assets/images/projects/spotipybot.png",
+                    "photo": "/assets/images/projects/spotipybot.webp",
                     "description": "A CLI automated bot that uses Google Chrome drivers to generate automatic Spotify listens on a given playlist.",
                     "links": [
                         {
