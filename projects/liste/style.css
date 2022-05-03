@@ -10,10 +10,6 @@ td, th {
     padding: 8px;
 }
 
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
-
-.selected {
-    background-color: #ff0000;
-}
+tr:nth-child(even) { background-color: #dddddd; }
+.selected { background-color: red; }
+.done { background-color: gray; }

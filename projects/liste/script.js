@@ -20,11 +20,16 @@ elenco = {
 }
 
 liste = {
-    Elenco: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18],
-    Sistemi: [12,11,15,9,8,1,7,17,14,4,5,6,3,13,18,10,16,2],
-    Informatica: [14,9,8,1,12,7,2,16,3,15,13,11,5,4,18,17,6,10],
-    Motoria: [1,5,15,6,11,8,14,7,12,17,18,16,3,9,2,13,10,4],
-    Inglese: [18,10,11,9,13,8,4,15,3,14,12,16,6,7,17,1,5,2]
+    Elenco: [[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18],
+            []],
+    Sistemi: [[12,11,15,9,8,1,7,17,14,4,5,6,3,13,18,10,16,2],
+            [11,15]],
+    Informatica: [[14,9,8,1,12,7,2,16,3,15,13,11,5,4,18,17,6,10],
+            []],
+    Motoria: [[1,5,15,6,11,8,14,7,12,17,18,16,3,9,2,13,10,4],
+            [1,5,15,6]],
+    Inglese: [[18,10,11,9,13,8,4,15,3,14,12,16,6,7,17,1,5,2],
+            []]
 }
 
 
@@ -45,11 +50,12 @@ function loadLists(numero=0) {
 
         for (let materia in liste) {
             let td = document.createElement("td");
-            let estratto = liste[materia][i];
+            let estratto = liste[materia][0][i];
             td.innerText = `${estratto} - ${elenco[estratto]}`;
-            if (numero == estratto) {
+            if (numero == estratto)
                 td.classList.add("selected");
-            }
+            if (liste[materia][1].includes(estratto))
+                td.classList.add("done");
             row.appendChild(td);
         }
 
