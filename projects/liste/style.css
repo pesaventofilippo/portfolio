@@ -11,5 +11,5 @@ td, th {
 }
 
 tr:nth-child(even) { background-color: #dddddd; }
-.selected { background-color: red; }
+.selected { background-color: yellow; }
 .done { background-color: gray; }
