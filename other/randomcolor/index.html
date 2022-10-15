@@ -10,21 +10,26 @@
     </head>
 
     <body>
-        <p id="colorid" onclick="copyToClipboard()"></p>
+        <div id="footer">
+            <span id="color" onclick="copyToClipboard()"></span> | 
+            <span id="reload" onclick="refresh()">reload</span>
+        </div>
 
         <style>
-            #colorid {
+            #footer {
                 font-family: 'Roboto Mono', monospace;
-                cursor: pointer;
                 position: fixed;
-                bottom: 0;
-                width:100%;
+                bottom: 10px;
+                width: 100%;
                 text-align: center;
+            }
+            #color, #reload {
+                cursor: pointer;
             }
         </style>
 
         <script type="text/javascript">
-            var colorText = document.getElementById("colorid");
+            var colorText = document.getElementById("color");
 
             function setText(string) {
                 colorText.innerText = string;
@@ -43,10 +48,14 @@
                 setTimeout(setText, 2000, prev);
             }
 
-            var selColor = Math.floor(Math.random() * 16777215).toString(16);
-            selColor = "#" + ("000000" + selColor).slice(-6);
-            document.bgColor = selColor;
-            setText(selColor.toUpperCase());
+            function refresh() {
+                var selColor = Math.floor(Math.random() * 16777215).toString(16);
+                selColor = "#" + ("000000" + selColor).slice(-6);
+                document.bgColor = selColor;
+                setText(selColor.toUpperCase());
+            }
+
+            refresh();
         </script>
     </body>
 </html>
