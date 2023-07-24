@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>F1TelemetryData</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="F1TelemetryData Showcase">
+    <meta name="author" content="Filippo Pesavento">
+    <link rel="shortcut icon" href="/assets/images/projects/f1telemetrydata.webp">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
+    <script defer src="/assets/scripts/custom.js"></script>
+    <link rel="stylesheet" href="/assets/bootstrap/bootstrap.min.css">
+    <link id="theme" rel="stylesheet" href="/assets/css/default.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container clearfix">
+            <img class="profile-image img-fluid float-left" src="/assets/images/projects/f1telemetrydata.webp" width="180" height="180" alt="F1 Telemetry Data">
+            <div class="profile-content float-left">
+                <h1 class="name">F1 Telemetry Data</h1>
+                <h2 class="desc">See telemetries for every F1 session!</h2>
+                <ul class="social list-inline">
+                    <li class="list-inline-item"><a href="https://twitter.com/F1TelemetryData" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="https://t.me/F1TelemetryData" target="_blank"><i class="fab fa-telegram"></i></a></li>
+                </ul>
+            </div>
+            <a class="btn btn-cta-primary float-right" href="https://twitter.com/F1TelemetryData" target="_blank"><i class="fab fa-twitter"></i> Follow me!</a>
+        </div>
+    </header>
+
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-lg-8 col-12">
+                <section class="latest section">
+                    <div class="section-inner">
+                        <h2 class="heading"><i class="fas fa-chart-bar"></i> Graph Examples</h2>
+                        <div class="content">
+                            <div class="item row">
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title">Lap Deltas</h3>
+                                </div>
+                                <img class="img-fluid" src="plots/delta.webp">
+                            </div>
+                            <div class="item row">
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title">Lap Compare (2 drivers)</h3>
+                                </div>
+                                <img class="img-fluid" src="plots/compare2.webp">
+                            </div>
+                            <div class="item row">
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title">Lap Compare (3 drivers)</h3>
+                                </div>
+                                <img class="img-fluid" src="plots/compare3.webp">
+                            </div>
+                            <div class="item row">
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title">Downforce Efficiency Map</h3>
+                                </div>
+                                <img class="img-fluid" src="plots/downforce.webp">
+                            </div>
+                            <div class="item row">
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title">Track Dominance (2 drivers)</h3>
+                                </div>
+                                <img class="img-fluid" src="plots/trackdominance2.webp">
+                            </div>
+                            <div class="item row">
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title">Track Dominance (3 drivers)</h3>
+                                </div>
+                                <img class="img-fluid" src="plots/trackdominance3.webp">
+                            </div>
+                            <div class="item row">
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title">Long Runs</h3>
+                                </div>
+                                <img class="img-fluid" src="plots/longruns.webp">
+                            </div>
+                            <div class="item row">
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title">Race Pace</h3>
+                                </div>
+                                <img class="img-fluid" src="plots/racepace.webp">
+                            </div>
+                            <div class="item row">
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title">Drivers' Top Speeds</h3>
+                                </div>
+                                <img class="img-fluid" src="plots/drivers-speeds.webp">
+                            </div>
+                            <div class="item row">
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title">Teams' Top Speeds</h3>
+                                </div>
+                                <img class="img-fluid" src="plots/top-speeds.webp">
+                            </div>
+                            <div class="item row">
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title">Teams' Minimum Speeds</h3>
+                                </div>
+                                <img class="img-fluid" src="plots/min-speeds.webp">
+                            </div>
+                            <div class="item row">
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title">Teams' Throttle Usage</h3>
+                                </div>
+                                <img class="img-fluid" src="plots/throttle.webp">
+                            </div>
+                            <div class="item row">
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title">Pit Stop Times</h3>
+                                </div>
+                                <img class="img-fluid" src="plots/pittimes.webp">
+                            </div>
+                            <div class="item row">
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title">Lap Times</h3>
+                                </div>
+                                <img class="img-fluid" src="plots/laps.webp">
+                            </div>
+                            <div class="item row">
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title">Lap Times + Stints</h3>
+                                </div>
+                                <img class="img-fluid" src="plots/laps-stints.webp">
+                            </div>
+                            <div class="item row">
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title">Fastest Lap Speed</h3>
+                                </div>
+                                <img class="img-fluid" src="plots/speed.webp">
+                            </div>
+                            <div class="item row">
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title">Fastest Lap Telemetry</h3>
+                                </div>
+                                <img class="img-fluid" src="plots/telemetry.webp">
+                            </div>
+                            <div class="item row">
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title">Timings</h3>
+                                </div>
+                                <img class="img-fluid" src="plots/timings.webp">
+                            </div>
+                            <div class="item row">
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title">Race Standings</h3>
+                                </div>
+                                <img class="img-fluid" src="plots/standings.webp">
+                            </div>
+                            <div class="item row">
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title">Tyre Performance</h3>
+                                </div>
+                                <img class="img-fluid" src="plots/tyredeg.webp">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="secondary col-lg-4 col-12">
+                <aside class="info aside section">
+                    <div class="section-inner">
+                        <h2 class="heading"><i class="fas fa-info-circle"></i>About the project</h2>
+                        <div class="content">
+                            <p>
+                                I've created a suite of F1 telemetry graphs that show many aspects of every session during a race weekend.<br>
+                                I'm currently maintaining a Twitter and Telegram page, as well as posting them on Reddit in the r/formula1 sub.<br>
+                                Many people already love it, go check it out!
+                            </p>
+                        </div>
+                    </div>
+                </aside>
+
+                <aside class="info aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Graphs per session</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li class="item">
+                                    <span class="title"><strong>FP1 / FP2 / FP3</strong></span>
+                                    <p>
+                                        - Delta<br>
+                                        - Track Dominance (Top 2/3)<br>
+                                        - Timings<br>
+                                        - Long Runs<br>
+                                        <br>
+                                        - Drivers' Speeds<br>
+                                        - Top Speeds<br>
+                                        - Min. Speeds<br>
+                                        - Throttle Percent<br>
+                                        <br>
+                                        - Lap Compare<br>
+                                    </p>
+                                </li>
+                                <br>
+                                <li class="item">
+                                    <span class="title"><strong>Quali / Sprint Shootout</strong></span>
+                                    <p>
+                                        - Delta<br>
+                                        - Track Dominance (Top 2/3)<br>
+                                        - Downforce Efficiency<br>
+                                        - Timings<br>
+                                        <br>
+                                        - Drivers' Speeds<br>
+                                        - Top Speeds<br>
+                                        - Min. Speeds<br>
+                                        - Throttle Percent<br>
+                                        <br>
+                                        - Lap Compare<br>
+                                    </p>
+                                </li>
+                                <br>
+                                <li class="item">
+                                    <span class="title"><strong>Sprint Race</strong></span>
+                                    <p>
+                                        - Standings<br>
+                                        - Timings<br>
+                                        - Tyre Strategies<br>
+                                        - Race Pace<br>
+                                        <br>
+                                        - Drivers' Speeds<br>
+                                        - Top Speeds<br>
+                                        - Min. Speeds<br>
+                                        - Throttle Percent<br>
+                                        <br>
+                                        - Lap Times<br>
+                                    </p>
+                                </li>
+                                <br>
+                                <li class="item">
+                                    <span class="title"><strong>Race</strong></span>
+                                    <p>
+                                        - Standings<br>
+                                        - Tyre Strategies<br>
+                                        - Pit Lane Times<br>
+                                        - Timings<br>
+                                        - Tyres Performance<br>
+                                        <br>
+                                        - Race Pace<br>
+                                        - Drivers' Speeds<br>
+                                        - Top Speeds<br>
+                                        - Min. Speeds<br>
+                                        - Throttle Percent<br>
+                                        <br>
+                                        - Lap Times
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div id="footer-homepage" class="footer-grid-element">
+                <small><a href="/">Home Page</a></small>
+            </div>
+
+            <div id="footer-credits" class="footer-grid-element">
+                <small>Made with <i class="fas fa-heart"></i> by Filippo Pesavento</small>
+            </div>
+
+            <div id="footer-switchtheme" class="footer-grid-element">
+                <small><a href="" onclick="switchTheme();return false;">Switch Theme</a></small>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
